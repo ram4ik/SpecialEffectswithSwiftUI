@@ -11,6 +11,9 @@
 		95838A3A27A58099007D2B7D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95838A3927A58099007D2B7D /* ContentView.swift */; };
 		95838A3C27A5809B007D2B7D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 95838A3B27A5809B007D2B7D /* Assets.xcassets */; };
 		95838A3F27A5809B007D2B7D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 95838A3E27A5809B007D2B7D /* Preview Assets.xcassets */; };
+		95838A4627A580CA007D2B7D /* Particle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95838A4527A580CA007D2B7D /* Particle.swift */; };
+		95838A4827A58115007D2B7D /* ParticleSystem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95838A4727A58115007D2B7D /* ParticleSystem.swift */; };
+		95838A4A27A586F7007D2B7D /* MotionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95838A4927A586F7007D2B7D /* MotionManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +22,9 @@
 		95838A3927A58099007D2B7D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		95838A3B27A5809B007D2B7D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		95838A3E27A5809B007D2B7D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		95838A4527A580CA007D2B7D /* Particle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Particle.swift; sourceTree = "<group>"; };
+		95838A4727A58115007D2B7D /* ParticleSystem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParticleSystem.swift; sourceTree = "<group>"; };
+		95838A4927A586F7007D2B7D /* MotionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotionManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,8 +59,11 @@
 			children = (
 				95838A3727A58099007D2B7D /* SpecialEffectswithSwiftUIApp.swift */,
 				95838A3927A58099007D2B7D /* ContentView.swift */,
+				95838A4927A586F7007D2B7D /* MotionManager.swift */,
 				95838A3B27A5809B007D2B7D /* Assets.xcassets */,
 				95838A3D27A5809B007D2B7D /* Preview Content */,
+				95838A4527A580CA007D2B7D /* Particle.swift */,
+				95838A4727A58115007D2B7D /* ParticleSystem.swift */,
 			);
 			path = SpecialEffectswithSwiftUI;
 			sourceTree = "<group>";
@@ -137,7 +146,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				95838A4827A58115007D2B7D /* ParticleSystem.swift in Sources */,
+				95838A4A27A586F7007D2B7D /* MotionManager.swift in Sources */,
 				95838A3A27A58099007D2B7D /* ContentView.swift in Sources */,
+				95838A4627A580CA007D2B7D /* Particle.swift in Sources */,
 				95838A3827A58099007D2B7D /* SpecialEffectswithSwiftUIApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -272,6 +284,7 @@
 				DEVELOPMENT_TEAM = L8W86DZDY2;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSMotionUsageDescription = "We need to read your movements";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -301,6 +314,7 @@
 				DEVELOPMENT_TEAM = L8W86DZDY2;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSMotionUsageDescription = "We need to read your movements";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
